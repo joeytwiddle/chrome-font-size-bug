@@ -1,0 +1,30 @@
+<head>
+  <title>Chrome font-size bug</title>
+  <style>
+    .button {
+      display: block;
+    }
+
+    p {
+      font-size: 16pt;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="button">This button's `display: block` causes problems</button>
+
+  <p>To see the bug: Open DevTools and enable device mode. Ensure the width is below 600px.</p>
+
+  <p>On Chrome mobile, this text appears very small. But the following text appears at (almost) the correct size...</p>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget diam iaculis elit auctor dictum. Phasellus auctor vulputate elit sed consequat. Etiam velit magna, fermentum a dignissim eget, bibendum et lectus. Curabitur feugiat dictum est, in rutrum diam mollis sed. Duis orci nisl, viverra eget dolor consequat, molestie tincidunt massa. Proin viverra lectus porta, vehicula justo eu, vestibulum lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vel nisl aliquam, cursus augue a, gravida leo. Phasellus vehicula efficitur sodales. Donec imperdiet tempor nunc, ut auctor sapien varius a. Morbi pharetra sapien ac hendrerit mollis. Etiam molestie vitae lacus at dictum. Maecenas molestie mauris mauris, at interdum augue dictum ac. In hac habitasse platea dictumst. Sed efficitur nisl at lacus bibendum mollis.</p>
+
+  <p>Another short paragraph appears with a small font size.</p>
+
+  <p>If you remove the button above (or remove its `display: block`) then the bug will disappear!</p>
+
+  <p>Although you may need to reload to see it (or toggle device mode off and back on).</p>
+
+  <p>Nullam feugiat placerat congue. Sed viverra suscipit justo sit amet semper. Proin at tortor lacus. Suspendisse a tellus neque. Mauris rhoncus ipsum sed pharetra posuere. Aliquam ex nisi, rutrum sit amet mi id, placerat rhoncus sem. Integer in felis quis odio vulputate consectetur dignissim ut tortor. Suspendisse scelerisque efficitur massa a ultrices. Nam faucibus aliquam nisi. Phasellus enim libero, laoreet sit amet lorem sed, porttitor rutrum diam. Donec in tempus libero, quis maximus metus. In sit amet iaculis mi. Vivamus bibendum tortor id ultricies convallis. Proin egestas ullamcorper turpis non mattis.</p>
+</body>
